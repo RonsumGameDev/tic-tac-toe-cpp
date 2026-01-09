@@ -12,6 +12,8 @@ bool tieCondition(char[]);
 
 int main(){
 
+    srand(time(0));
+
     char spaces[9];
     std::fill(spaces, spaces+9, ' ');
 
@@ -88,7 +90,6 @@ void playerMove(char spaces[], char playerMarker){
 
 void computerMove(char spaces[], char computerMarker){
     int number;
-    srand(time(0));
     do{
         number = (rand() % 9);
     }while(spaces[number] != ' ');
