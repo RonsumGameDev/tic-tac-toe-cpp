@@ -12,7 +12,7 @@ bool tieCondition(char[]);
 
 int main(){
 
-    
+    srand(time(0));
 
     char spaces[9];
     std::fill(spaces, spaces+9, ' ');
